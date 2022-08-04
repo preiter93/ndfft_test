@@ -38,6 +38,7 @@
 //! Advantages of "transpose"-approach
 //! - Performance (~50%)
 //! - No additional dependencies
+//!
 //! Disadvantages
 //! - Larger memory requirements
 //! - Not easily parallelizable
