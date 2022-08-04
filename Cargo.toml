@@ -1,0 +1,18 @@
+[package]
+name = "ndfft_test"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rustfft = "6.0"
+ndrustfft = "0.3"
+ndarray = "0.15"
+
+[dev-dependencies]
+criterion = { version = "0.3", features = ["html_reports"] }
+
+[[bench]]
+name = "fft2d"
+harness = false
