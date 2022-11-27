@@ -18,8 +18,8 @@ pub fn fft2d_with_transpose(
     } else {
         let scratch_len = m * n;
         assert!(scratch.len() >= scratch_len);
-        oop_transpose(&v, scratch, n, n);
+        oop_transpose(&v, scratch, m, n);
         fft.process_with_scratch(scratch, v);
-        oop_transpose(&scratch, v, n, n);
+        oop_transpose(&scratch, v, n, m);
     }
 }
